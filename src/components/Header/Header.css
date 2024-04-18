@@ -1,0 +1,36 @@
+/* using flexbox here */
+.Header-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.Header-Image {
+    width: auto;
+    transition: max-width 1s, min-width 1s;
+}
+
+.Header-Image-expanded {
+    min-width: 500px;
+    max-width: 480px;
+}
+
+.Header-Image-contracted {
+    min-width: 280px;
+    max-width: 300px;
+}
+
+.Header-Text {
+    font-family: 'JetBrains Mono', monospace;
+    padding-top: 5px;
+    transition: font-size 1s;
+}
+
+.Header-Text-expanded {
+    font-size: 50px;
+}
+
+.Header-Text-contracted {
+    font-size: 25px;
+}
